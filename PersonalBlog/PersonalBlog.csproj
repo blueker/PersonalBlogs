@@ -169,14 +169,18 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoryTBsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -239,6 +243,17 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\View\Index.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\CategoryTBs\Create.cshtml" />
+    <Content Include="Views\CategoryTBs\Delete.cshtml" />
+    <Content Include="Views\CategoryTBs\Details.cshtml" />
+    <Content Include="Views\CategoryTBs\Edit.cshtml" />
+    <Content Include="Views\CategoryTBs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,6 +264,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{fd96f729-3508-466d-ae0d-88ab18b981e7}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

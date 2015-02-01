@@ -1,0 +1,375 @@
+﻿@model IEnumerable<DataModel.CategoryTB>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParentID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IndexOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LargeIcon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Icon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientVersion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasList)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsLocal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LayoutType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChildrenCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JumpType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JumpUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppDownloadUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeedbackUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OriginalID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Priority)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jpop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bdefault)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShowToolBar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusBarStyle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CacheMinutes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastModifiedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WebViewStyle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainClickShowContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListClickShowContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListShowDownloadIcon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppScheme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppVersion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BackgroundImg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CheckStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemindType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IpPort)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DayShareUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthShareUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryPre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryAfter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chosen_circle_color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthDateChosen_color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthTitle_color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item_point_color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShowBackAndShare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeyDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeyString)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.itemHeaderBgColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentTypeIcon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DefaultReminder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hascity)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IndexOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LargeIcon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Icon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientVersion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasList)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsLocal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LayoutType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChildrenCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JumpType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JumpUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppDownloadUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeedbackUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OriginalID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Priority)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jpop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bdefault)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShowToolBar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusBarStyle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CacheMinutes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastModifiedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebViewStyle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MainClickShowContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListClickShowContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListShowDownloadIcon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppScheme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppVersion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BackgroundImg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RemindType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IpPort)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DayShareUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthShareUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryPre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryAfter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chosen_circle_color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthDateChosen_color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthTitle_color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item_point_color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShowBackAndShare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeyDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeyString)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.itemHeaderBgColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContentTypeIcon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DefaultReminder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hascity)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
